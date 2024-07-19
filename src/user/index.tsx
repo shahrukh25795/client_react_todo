@@ -12,7 +12,7 @@ const Users = () => {
     }
 
     const handleDelete = (user: any) => {
-        instance.delete(`user/${user?._id}`).then((res: any) => {
+        instance.delete(`user/${user?._id}`).then(() => {
             fetchUsers();
         }).catch(() => { })
     }
