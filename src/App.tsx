@@ -1,10 +1,21 @@
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import SignIn from "./auth/SignIn";
+import Users from "./user";
 
 const App = () => {
-  return (
-    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-      <p>Welcome to srk house</p>
-    </div>
-  )
+
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <Users />,
+    },
+    {
+      path: "/sign-in",
+      element: <SignIn />,
+    },
+  ]);
+
+  return <RouterProvider router={router} />
 }
 
 export default App

@@ -1,0 +1,100 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+.container {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    height: 100vh;
+    padding-top: 20px;
+    overflow-y: scroll;
+    width: 100%;
+}
+
+.container .users{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 30%;
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding-left:10px;
+    padding-right: 10px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+.container .users .action-btn{
+    padding: 5px 20px;
+    border-radius: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.container .users .edit{
+    background-color: bisque;
+}
+.container .users .delete{
+    background-color: tomato;
+}
+.container .users .add{
+    background-color:green
+}
+.container .users .text-input {
+    flex: 1;
+    border: none; 
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s; 
+}
+
+.form-group {
+    margin-bottom: 10px; 
+    width: 30%;
+}
+
+.form-input {
+    width: 100%; 
+    padding: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    font-size: 16px; 
+    outline: none;
+    box-sizing: border-box; 
+    transition: border-color 0.3s, box-shadow 0.3s; 
+}
+
+.form-input::placeholder {
+    color: #888; /* Placeholder text color */
+}
+
+.form-input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.btn {
+    background-color: #f7e04b; 
+    color: #333; 
+    border: none; 
+    border-radius: 5px;
+    padding: 10px 20px; 
+    font-size: 16px; 
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s; 
+}
+
+.btn:hover {
+    background-color: #e1c74d;
+    transform: scale(1.05);
+}
+
+.btn:active {
+    background-color: #d0b84d; 
+    transform: scale(0.95); 
+}
+
+.btn:focus {
+    outline: none; 
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+}
+
